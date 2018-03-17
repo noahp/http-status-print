@@ -20,8 +20,9 @@ fn main() {
     let codes: Vec<_> = matches.values_of("CODE").unwrap().collect();
 
     for code in codes {
-        let status = http::status::StatusCode::from_u16(code.parse().unwrap()).unwrap();
+        let intcode = code.parse().unwrap();
+        let status = http::status::StatusCode::from_u16(intcode).unwrap();
 
-        println!("{}", status);
+        println!("{} : https://httpstatuses.com/{}", status, intcode);
     }
 }

@@ -6,3 +6,7 @@ authors = ["noah"]
 [dependencies]
 clap = "2.31.1"
 http = "0.1.5"
+
+[profile.release]
+lto = true
+panic = 'abort'
