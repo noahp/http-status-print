@@ -1,0 +1,8 @@
+[package]
+name = "http-status-print"
+version = "0.1.0"
+authors = ["noah"]
+
+[dependencies]
+clap = "2.31.1"
+http = "0.1.5"
