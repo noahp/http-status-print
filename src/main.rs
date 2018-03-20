@@ -17,11 +17,23 @@ fn main() {
         )
         .get_matches();
 
-    let codes: Vec<_> = matches.values_of("CODE").unwrap().collect();
+    let codes: Vec<&str> = matches.values_of("CODE").unwrap().collect();
 
     for code in codes {
-        let intcode = code.parse().unwrap();
-        let status = http::status::StatusCode::from_u16(intcode).unwrap();
+        let intcode: u16 = match code.parse() {
+            Ok(n) => n,
+            Err(t) => {
+                println!("bad error code: {}", t);
+                continue;
+            },
+        };
+
+        let status = match http::status::StatusCode::from_u16(intcode) {
+            Ok(n) => n,
+            Err(t) => {
+                println!("bad error code {}: {}", intcode, t);
+                continue;},
+        };
 
         println!("{} : https://httpstatuses.com/{}", status, intcode);
     }
