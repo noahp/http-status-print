@@ -1,3 +1,4 @@
+[![Crates.io - http-status-print](https://img.shields.io/crates/v/http-status-print.svg?style=flat-square)](https://crates.io/crates/http-status-print)
 # http-status-print
 Utility to print short descriptions for HTTP error codes:
 ```bash
