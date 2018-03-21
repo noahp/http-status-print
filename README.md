@@ -2,9 +2,10 @@
 # http-status-print
 Utility to print short descriptions for HTTP error codes:
 ```bash
-➜ http-status-print 234 503
-234 <unknown status code> : https://httpstatuses.com/234
-503 Service Unavailable : https://httpstatuses.com/503
+➜ http-status-print 123 200 501
+123 - 123 <unknown status code>
+200 - OK : https://httpstatuses.com/200
+501 - Not Implemented : https://httpstatuses.com/501
 ```
 Try to learn a little rust while building this tool.
 

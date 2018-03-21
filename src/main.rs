@@ -40,8 +40,15 @@ fn main() {
 
         // Only print a link to the expanded descriptions for known codes
         match status.canonical_reason() {
-            Some(reason) => println!("{} : https://httpstatuses.com/{}", reason, intcode),
-            None => println!("{}", status),
+            Some(reason) => {
+                println!(
+                    "{} - {} : https://httpstatuses.com/{}",
+                    intcode,
+                    reason,
+                    intcode
+                )
+            }
+            None => println!("{} - {}", intcode, status),
         };
     }
 }
