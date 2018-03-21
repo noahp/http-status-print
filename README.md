@@ -9,6 +9,12 @@ Utility to print short descriptions for HTTP error codes:
 Try to learn a little rust while building this tool.
 
 # Install
+Installation is via the cargo package manager. You'll need to [rustup](https://www.rustup.rs/) if you don't have this already!
+## Release
+```bash
+cargo install http-status-print
+```
+## Edge
 ```bash
 cargo install --git https://github.com/noahp/http-status-print
 ```
