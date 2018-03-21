@@ -1,11 +1,12 @@
 [package]
 name = "http-status-print"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["noah"]
 description = "Utility to print explanatory information for http status codes"
 homepage = "https://github.com/noahp/http-status-print"
 repository = "https://github.com/noahp/http-status-print.git"
 license = "MIT"
+readme = "README.md"
 
 [dependencies]
 clap = "2.31.1"
