@@ -1,7 +1,7 @@
 [package]
 name = "http-status-print"
-version = "0.1.1"
-authors = ["noah"]
+version = "0.1.2"
+authors = ["Noah Pendleton"]
 description = "Utility to print explanatory information for http status codes"
 homepage = "https://github.com/noahp/http-status-print"
 repository = "https://github.com/noahp/http-status-print.git"
@@ -11,8 +11,8 @@ readme = "README.md"
 [dependencies]
 clap = "2.31.1"
 http = "0.1.5"
+human-panic = "0.4.0"
 
 [profile.release]
 lto = true
 panic = 'abort'
-

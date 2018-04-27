@@ -1,9 +1,14 @@
 extern crate clap;
 extern crate http;
+#[macro_use]
+extern crate human_panic;
 
 use clap::{App, Arg};
 
 fn main() {
+    // set up human-panic
+    setup_panic!();
+
     let matches = App::new(env!("CARGO_PKG_NAME"))
         .version(env!("CARGO_PKG_VERSION"))
         .author("Noah Pendleton / https://github.com/noahp")
