@@ -19,8 +19,7 @@ fn main() {
                 .multiple(true)
                 .required(true)
                 .help("Numerical HTTP codes to return information on"),
-        )
-        .get_matches();
+        ).get_matches();
 
     let codes: Vec<&str> = matches.values_of("CODE").unwrap().collect();
 
