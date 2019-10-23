@@ -9,9 +9,9 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-clap = "2.31.1"
-http = "0.1.5"
-human-panic = "1.0.0"
+clap = "2.32"
+http = "0.1.19"
+human-panic = "1.0.1"
 
 [profile.release]
 lto = true
