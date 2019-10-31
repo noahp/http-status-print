@@ -7,6 +7,7 @@ homepage = "https://github.com/noahp/http-status-print"
 repository = "https://github.com/noahp/http-status-print.git"
 license = "MIT"
 readme = "README.md"
+edition = "2018"
 
 [dependencies]
 clap = "2.32"
