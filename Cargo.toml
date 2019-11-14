@@ -1,6 +1,6 @@
 [package]
 name = "http-status-print"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Noah Pendleton"]
 description = "Utility to print explanatory information for http status codes"
 homepage = "https://github.com/noahp/http-status-print"
