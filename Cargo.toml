@@ -10,10 +10,9 @@ readme = "README.md"
 edition = "2018"
 
 [dependencies]
-clap = "2.32"
+structopt = "0.3"
 http = "0.1.19"
 human-panic = "1.0.1"
 
 [profile.release]
 lto = true
-panic = 'abort'
