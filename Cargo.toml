@@ -10,6 +10,7 @@ readme = "README.md"
 edition = "2024"
 
 [dependencies]
+colored = "2.1"
 clap = { version = "4.0", features = ["derive"] }
 http = "0.1.19"
 human-panic = "2.0.3"
